@@ -50,3 +50,50 @@ function eraseEffect() {
 }
 
 typeEffect();
+
+particlesJS("particles-js", {
+
+    particles: {
+        number: {
+            value: 80
+        },
+
+        size: {
+            value: 3
+        },
+
+        move: {
+            speed: 1
+        },
+
+        line_linked: {
+            enable: true
+        }
+    }
+});
+
+function filterProjects(category) {
+
+    const projects =
+        document.querySelectorAll(".project-card");
+
+    projects.forEach(project => {
+
+        if (
+            category === "all" ||
+            project.classList.contains(category)
+        ) {
+            project.style.display = "block";
+        }
+
+        else {
+            project.style.display = "none";
+        }
+    });
+}
+
+function toggleTheme() {
+
+    document.body.classList.toggle("light-mode");
+}
+
