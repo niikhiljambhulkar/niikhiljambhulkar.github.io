@@ -66,3 +66,76 @@ nav a {
 nav a:hover {
     color: #38bdf8;
 }
+
+.background-animation {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background:
+        radial-gradient(circle at top left, #1d4ed8, transparent 30%),
+        radial-gradient(circle at bottom right, #7e22ce, transparent 30%);
+    z-index: -1;
+}
+
+.progress {
+    width: 100%;
+    background-color: #334155;
+    border-radius: 20px;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
+.progress-bar {
+    height: 15px;
+    border-radius: 20px;
+}
+
+.powerbi {
+    width: 85%;
+    background-color: #facc15;
+}
+
+.sql {
+    width: 75%;
+    background-color: #38bdf8;
+}
+
+.python {
+    width: 65%;
+    background-color: #22c55e;
+}
+
+.resume-btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 24px;
+    background-color: #38bdf8;
+    color: black;
+    border-radius: 10px;
+    font-weight: bold;
+}
+
+.resume-btn:hover {
+    background-color: white;
+}
+
+@media (max-width: 768px) {
+
+    h1 {
+        font-size: 32px;
+    }
+
+    section {
+        padding: 20px;
+    }
+
+    nav a {
+        display: block;
+        margin: 10px;
+    }
+
+    .project-card {
+        margin-bottom: 20px;
+    }
+}
+
