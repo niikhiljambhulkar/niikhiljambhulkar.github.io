@@ -153,9 +153,17 @@ nav a:hover {
     margin-top: 20px;
 }
 
+#contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 form {
     display: flex;
     flex-direction: column;
+    width: 100%;
+    max-width: 500px;   /* controls form size */
 }
 
 input,
@@ -164,6 +172,8 @@ textarea {
     padding: 12px;
     border-radius: 10px;
     border: none;
+    width: 100%;
+    box-sizing: border-box;
 }
 
 button {
@@ -172,6 +182,7 @@ button {
     border: none;
     border-radius: 10px;
     font-weight: bold;
+    cursor: pointer;
 }
 
 .light-mode {
