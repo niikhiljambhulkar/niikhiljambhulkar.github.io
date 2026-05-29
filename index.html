@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <div class="background-animation"></div>
 
     <nav>
         <a href="#about">About</a>
@@ -18,7 +19,9 @@
 
     <header>
         <h1>Nikhil Jambhulkar</h1>
-        <p>Aspiring Data Analyst | Future AI & Software Developer</p>
+        <p>
+            <span id="typing"></span>
+        </p>
     </header>
 
     <section id="about">
@@ -31,14 +34,30 @@
     </section>
 
     <section id="skills">
+    
         <h2>Skills</h2>
-
-        <ul>
-            <li>Power BI</li>
-            <li>SQL</li>
-            <li>Excel</li>
-            <li>Python</li>
-        </ul>
+    
+        <div class="skill">
+            <p>Power BI</p>
+            <div class="progress">
+                <div class="progress-bar powerbi"></div>
+            </div>
+        </div>
+    
+        <div class="skill">
+            <p>SQL</p>
+            <div class="progress">
+                <div class="progress-bar sql"></div>
+            </div>
+        </div>
+    
+        <div class="skill">
+            <p>Python</p>
+            <div class="progress">
+                <div class="progress-bar python"></div>
+            </div>
+        </div>
+    
     </section>
     <section id="projects">
     
@@ -79,6 +98,20 @@
         </div>
     
     </section>
+
+    <section id="timeline">
+    
+        <h2>My Journey</h2>
+    
+        <ul>
+            <li>Started learning Data Analytics</li>
+            <li>Built Power BI dashboards</li>
+            <li>Learning Python & SQL</li>
+            <li>Moving toward AI & Software Development</li>
+        </ul>
+    
+    </section>
+
 
     <section id="contact">
         <h2>Contact</h2>
