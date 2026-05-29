@@ -139,3 +139,43 @@ nav a:hover {
     }
 }
 
+#particles-js {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: -2;
+    top: 0;
+    left: 0;
+}
+
+#github img {
+    width: 100%;
+    margin-top: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+input,
+textarea {
+    margin-bottom: 15px;
+    padding: 12px;
+    border-radius: 10px;
+    border: none;
+}
+
+button {
+    padding: 12px;
+    background-color: #38bdf8;
+    border: none;
+    border-radius: 10px;
+    font-weight: bold;
+}
+
+.light-mode {
+    background-color: white;
+    color: black;
+}
+
