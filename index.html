@@ -7,6 +7,10 @@
 
     <link rel="stylesheet" href="style.css">
 </head>
+<script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+
+<div id="particles-js"></div>
+
 <body>
     <div class="background-animation"></div>
 
@@ -15,6 +19,9 @@
         <a href="#skills">Skills</a>
         <a href="#projects">Projects</a>
         <a href="#contact">Contact</a>
+        <button onclick="toggleTheme()">
+            Toggle Theme
+        </button>
     </nav>
 
     <header>
@@ -80,12 +87,26 @@
     
     </section>
 
+    <div class="filter-buttons">
+
+        <button onclick="filterProjects('all')">All</button>
+    
+        <button onclick="filterProjects('analytics')">
+            Analytics
+        </button>
+    
+        <button onclick="filterProjects('ai')">
+            AI
+        </button>
+    
+    </div>
+
     <section id="projects">
     
         <h2>Projects</h2>
         
         <h3>Data Analytics:</h3>
-        <div class="project-card">
+        <div class="project-card analytics">
     
             <img src="assets/images/ipl-dashboard.png" alt="IPL Dashboard">
     
@@ -102,7 +123,7 @@
     
         </div>
     
-        <div class="project-card">
+        <div class="project-card analytic">
     
             <img src="assets/images/ecommerce-dashboard.png" alt="Ecommerce Dashboard">
     
@@ -117,6 +138,23 @@
             </a>
     
         </div>
+         <iframe
+            width="100%"
+            height="500"
+            src="YOUR_POWERBI_LINK"
+            frameborder="0"
+            allowFullScreen="true">
+        </iframe>
+
+    </section>
+
+    <section id="github">
+
+        <h2>GitHub Contributions</h2>
+    
+        <img
+            src="https://ghchart.rshah.org/niikhiljambhulkar"
+            alt="GitHub Contributions">
     
     </section>
 
@@ -149,13 +187,33 @@
     
     </section>
 
-
     <section id="contact">
-        <h2>Contact</h2>
-
-        <p>Email: niikhil.jambhulkar@gmail.com</p>
-
-        <p>GitHub: github.com/niikhiljambhulkar</p>
+    
+        <h2>Contact Me</h2>
+    
+        <form action="https://formspree.io/f/xpqnnqpz" method="POST">
+    
+            <input
+                type="text"
+                name="name"
+                placeholder="Your Name"
+                required>
+    
+            <input
+                type="email"
+                name="email"
+                placeholder="Your Email"
+                required>
+    
+            <textarea
+                name="message"
+                placeholder="Your Message"
+                required></textarea>
+    
+            <button type="submit">Send</button>
+    
+        </form>
+    
     </section>
 
     <script src="script.js"></script>
