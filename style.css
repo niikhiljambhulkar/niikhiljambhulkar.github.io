@@ -30,19 +30,65 @@ h3{
     color: #f8de38;
 }
 
+.project-card,
+.certificate-card,
+.journey-card {
+
+    background-color: #1e293b;
+    padding: 25px;
+    border-radius: 12px;
+    margin-bottom: 25px;
+
+}
+
 .project-card img {
+
     width: 100%;
     border-radius: 10px;
     margin-bottom: 15px;
+
 }
 
 .project-card:hover {
+
     transform: translateY(-5px);
     transition: 0.3s;
+
 }
 
-.project-card {
-    transition: 0.3s;
+.project-btn {
+
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 20px;
+
+    background-color: #38bdf8;
+    color: black;
+
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+
+}
+
+.project-btn:hover {
+
+    background-color: white;
+
+}
+
+#certifications ul,
+#journey ul {
+
+    padding-left: 20px;
+
+}
+
+#certifications li,
+#journey li {
+
+    margin-bottom: 10px;
+
 }
 
 a {
